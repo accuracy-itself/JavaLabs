@@ -1,0 +1,17 @@
+package First;
+import java.util.*;
+import java.lang.Math;
+
+public class Task1{
+	public static void main(String[] args)
+	{
+		Scanner in = new Scanner(System.in);
+		double a = in.nextDouble(), b = in.nextDouble();
+		System.out.println(func(a, b));
+	}
+	
+	public static double func(double x, double y)
+	{
+		return (1 + Math.pow(Math.sin(x + y), 2))/(2 + Math.abs(x - 2 * x / (1 + x * x * y * y))) + x;
+	}
+}

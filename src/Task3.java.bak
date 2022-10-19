@@ -1,0 +1,22 @@
+package First;
+import java.util.Scanner;
+import java.lang.Math;
+
+public class Task3
+{
+	public static void main(String[] args)
+	{
+		Scanner in = new Scanner(System.in);
+		double a = in.nextDouble(), b = in.nextDouble(), h = in.nextDouble();
+		int l = (int)((b - a) / h);
+		
+		double[][] result;
+		result = new double[l][2];
+		for(int i = 0; i < l; i++)
+		{
+			result[i][0] = a;
+			result[i][1] = Math.tan(a);
+			System.out.printf("%f   %f\n",result[i][0], result[i][1]);
+		}
+	}
+}
